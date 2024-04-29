@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Demo</title>
+</head>
+
+<body>
+    <button>Кнопка вне формы (кнопка-пустышка 3)</button>
+    <form action="#">
+        <input type="hidden" name="hid" value="1">
+        <div>
+            <label for="email">Введите email</label>
+            <input type="email" placeholder="email" id="email" name="email" value="no@email.ru">
+        </div>
+        <label for="pass">Введите пароль</label>
+        <input type="password" placeholder="password" id="pass" name="pass">
+        <label for="birthDate">Введите дату рождения</label>
+        <input type="date" placeholder="дата рождения" id="birthDate" name="birthDate">
+        <label for="color">Выберите цвет</label>
+        <input type="color" id="color" name="color">
+        <!-- альтернативная привязка лейбла с инпутом -->
+        <label>
+            Введите число
+            <input type="number" placeholder="number">
+        </label>
+        <button>Дефолтная кнопка 1</button>
+        <button type="button">Кнопка-пустышка 1</button>
+        <button type="submit">Дефолтная кнопка 2</button>
+        <button type="reset">Сброс</button>
+        <button type="menu">Меню (тоже сабмитит)</button>
+        <!-- альтернативнй путь создания кнопки (нерекомендованный) -->
+        <input type="button" value="Кнопка-пустышка 2">
+        <input type="submit" value="Дефолтная кнопка 3">
+        <div>
+            <label for="agree">Согласен с обработкой данных</label>
+            <input type="checkbox" name="agree" id="agree" checked="">
+        </div>
+        <div>
+            <label for="all">Поиск повсюду</label>
+            <input type="radio" name="search" id="all" value="all">
+        </div>
+        <div>
+            <label for="youtube">Поиск по YouTube</label>
+            <input type="radio" name="search" id="youtube" value="youtube">
+        </div>
+        <!-- select отдельный элемент -->
+        <div>
+            <label for="topic">Тематика</label>
+            <select name="topic" id="topic">
+                <option value="1">Все</option>
+                <optgroup label="Популярное">
+                    <option value="2">Животные</option>
+                    <option value="3" selected="">Разработка</option>
+                </optgroup>
+                <optgroup label="Популярочка">
+                    <option value="2">Животные</option>
+                    <option value="3" selected>Разработка</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="volume">Громкость</label>
+            <input type="range" name="volume" id="volume" min="0" max="10" step="2">
+        </div>
+        <div>
+            <label for="num">Оценка</label>
+            <input type="number" name="num" id="num" min="1" max="5">
+        </div>
+        <!-- textarea отдельный элемент -->
+        <div>
+            <label for="text">Комментарий</label>
+            <textarea name="text" id="text" rows="10" cols="50" placeholder="Введите текст"></textarea>
+        </div>
+        <div>
+            <label for="query">Введите запрос:</label>
+            <input type="text" placeholder="Запрос..." name="search_query" id="query" title="Введите только цифры"
+                minlength="3" maxlength="20" pattern="/^\d+$/">
+            <button>Искать на YouTube</button>
+        </div>
+        <div>
+            <input type="email" name="email" id="">
+            <input type="url" name="url" id="">
+        </div>
+    </form>
+
+
+</body>
+
+</html>
