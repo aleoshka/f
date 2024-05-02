@@ -1,0 +1,81 @@
+#heroButton {
+    color: #FFF;
+    background-color: #4262FF;
+}
+
+#heroButton:hover {
+    background-color: #080873;
+}
+
+#heroButton:active {
+    background-color: #ff0d00;
+}
+
+.heroForm input:focus {
+    background-color: aliceblue;
+}
+
+/* ul li:first-child {
+    color: aqua;
+}
+
+ul li:last-child {
+    color: red;
+} */
+
+ul li:nth-child(3n-1) {
+    color: red;
+}
+
+
+
+.link {
+    color: #4262FF;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #0e05ab;
+}
+
+h1,
+h2 {
+    color: #050038;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+p {
+    color: #050038;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.sectionText {
+    color: rgba(5, 0, 56, 0.6);
+}
+
+header a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #050038;
+    text-decoration: none;
+}
+
+header>a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #050038;
+    text-decoration: none;
+}
+
+heroForm+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #050038;
+}

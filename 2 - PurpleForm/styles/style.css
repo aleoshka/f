@@ -16,6 +16,14 @@ textarea {
     background-color: #2E2D3D;
 }
 
+input:invalid {
+    background-color: red;
+}
+
+input:valid {
+    background-color: green;
+}
+
 label {
     color: #AFB2BF;
 }
@@ -24,3 +32,7 @@ button {
     color: #FAFAFA;
     background-color: #6C38CC;
 }
+
+/* input[type="email"] {
+    background-color: red;
+} */
