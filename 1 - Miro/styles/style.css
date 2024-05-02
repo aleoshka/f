@@ -1,3 +1,7 @@
+*::selection {
+    background-color: cadetblue;
+}
+
 #heroButton {
     color: #FFF;
     background-color: #4262FF;
@@ -15,6 +19,16 @@
     background-color: aliceblue;
 }
 
+/* a::after {
+    color: red;
+    content: " ! ";
+}
+
+a::before {
+    color: red;
+    content: " ! ";
+} */
+
 /* ul li:first-child {
     color: aqua;
 }
@@ -23,11 +37,13 @@ ul li:last-child {
     color: red;
 } */
 
-ul li:nth-child(3n-1) {
+/* ul li:nth-last-child(3n-1) {
     color: red;
-}
+} */
 
-
+/* p:not(.sectionText) {
+    color: red;
+} */
 
 .link {
     color: #4262FF;
@@ -73,9 +89,22 @@ header>a {
     text-decoration: none;
 }
 
-heroForm+p {
+.heroForm+p {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #050038;
+}
+
+nav ul {
+    list-style: none;
+}
+
+/* .sectionList {
+    list-style: url(../images/check.svg);
+} */
+
+
+.sectionList li::marker {
+    content: url(../images/check.svg);
 }
