@@ -108,3 +108,11 @@ nav ul {
 .sectionList li::marker {
     content: url(../images/check.svg);
 }
+
+.experimentRed {
+    background-color: red;
+}
+
+.experimentBlue {
+    background-color: blue;
+}
