@@ -1,0 +1,62 @@
+.cl1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+.cl2 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+.cl3 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+.static .cl2 {
+    position: static;
+}
+
+.relative .cl2 {
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+
+.absolute {
+    position: relative;
+}
+
+.absolute .cl2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+/* .fixed .cl2 {
+    position: fixed;
+    top: 50px;
+    left: 30px;
+} */
+
+.sticky {
+    height: 600px;
+}
+
+.sticky .cl2 {
+    position: sticky;
+    top: 50px;
+    left: 30px;
+}
