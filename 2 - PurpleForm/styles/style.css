@@ -25,16 +25,17 @@ textarea {
     padding: 27px 48px 12px;
     border: none;
     border-radius: 10px;
+    width: 100%;
 }
 
 label {
-    position: absolute;
-    top: 12px;
-    left: 48px;
+    color: #AFB2BF;
     font-weight: 400;
     font-size: 12px;
     line-height: 120%;
-    color: #AFB2BF;
+    position: absolute;
+    top: 12px;
+    left: 48px;
 }
 
 button {
