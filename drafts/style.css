@@ -60,3 +60,90 @@
     top: 50px;
     left: 30px;
 }
+
+/* это transition timing function */
+/* .exp div {
+    height: 200px;
+    width: 200px;
+    background-color: #220081;
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+    transition: transform 2s;
+} */
+
+/* .exp div:nth-child(1) {
+    margin-left: 400px;
+    transition-timing-function: linear;
+}
+
+.exp div:nth-child(2) {
+    margin-left: 400px;
+    transition-timing-function: ease-out;
+}
+
+.exp div:nth-child(3) {
+    margin-left: 400px;
+    transition-timing-function: ease-in;
+}
+
+.exp div:nth-child(4) {
+    margin-left: 400px;
+    transition-timing-function: steps(10, end);
+}
+
+.exp div:nth-child(5) {
+    margin-left: 400px;
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+} */
+
+/* это transform */
+/* .exp div:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: right bottom;
+}
+
+.exp div:nth-child(2) {
+    transform: scale(2, 1);
+}
+
+.exp div:nth-child(3) {
+    transform: translateX(300px);
+}
+
+.exp div:nth-child(4) {
+    transform: skew(-10deg);
+} */
+
+/* это animation */
+.exp2 {
+    height: 100px;
+    width: 100px;
+    background-color: #026a5c;
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+    animation: my-move 1s ease 5;
+}
+
+.exp2:hover {
+    animation-play-state: paused;
+}
+
+@keyframes my-move {
+    25% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    75% {
+        transform: translateX(0%) translateY(100%)
+    }
+
+    100% {
+        transform: translateX(0%) translateY(0%);
+    }
+}
