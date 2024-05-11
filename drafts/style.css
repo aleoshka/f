@@ -1,3 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2 {
+    color: #050038;
+    font-weight: 400;
+    font-size: 48px;
+    /* font-size: 5vw; */
+    /* font-size: 5vmin; */
+    /* font-size: clamp(min(4vw, 10rem), 300px, max(20vw, 40rem)); */
+    line-height: 56px;
+}
+
 .cl1 {
     background-color: red;
     width: 100px;
@@ -116,17 +131,19 @@
 } */
 
 /* это animation */
-.exp2 {
-    height: 100px;
-    width: 100px;
+.exp2 div {
+    /* width: calc(100% / 3); */
+    /* width: max(20%, 200px); */
+    width: clamp(200px, 80%, 600px);
+    height: 200px;
     background-color: #026a5c;
     margin: 10px;
     color: white;
     font-size: 30px;
-    animation: my-move 1s ease 5;
+    /* animation: my-move 1s ease 5; */
 }
 
-.exp2:hover {
+/* .exp2:hover {
     animation-play-state: paused;
 }
 
@@ -145,5 +162,18 @@
 
     100% {
         transform: translateX(0%) translateY(0%);
+    }
+} */
+
+@media (min-width: 500px) {
+    h1 {
+        color: red;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        color: green;
+        /* display: none; */
     }
 }
