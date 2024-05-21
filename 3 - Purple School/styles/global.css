@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #6c38cc;
+    --color-primary: #6C38CC;
     --color-text: #FAFAFA;
     --color-link-hover: #AFB2BF;
     --color-bg: #16171D;
@@ -12,7 +12,7 @@
 body {
     background: var(--color-bg);
     margin: 0;
-    font-family: 'Fira Sans';
+    font-family: 'Fira Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
 }
