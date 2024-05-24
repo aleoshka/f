@@ -1,6 +1,7 @@
 :root {
     --color-primary: #6C38CC;
     --color-primary-hover: #5a2ab3;
+    --color-secondary: #E47AD5;
     --color-text: #FAFAFA;
     --color-link-hover: #AFB2BF;
     --color-bg: #16171D;
@@ -11,6 +12,11 @@
     --border-10: 10px;
     --layout-width: 1172px;
     --gradient: linear-gradient(93.33deg, #D77BE6 9.26%, #BE63E5 42.32%, #6C38CC 104.58%);
+    --color-footer: #101114;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
