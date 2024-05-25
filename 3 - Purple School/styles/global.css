@@ -30,3 +30,11 @@ body {
 a {
     text-decoration: none;
 }
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0;
+    color: var(--color-text);
+}

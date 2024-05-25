@@ -4,6 +4,10 @@
     background-color: var(--color-bg-medium);
 }
 
+.section_dark {
+    background-color: var(--color-bg);
+}
+
 /* Button */
 
 .button {
@@ -59,4 +63,52 @@
 
 .social-icons__icon:hover {
     background-color: var(--color-bg-medium);
+}
+
+/* Main */
+
+.main {
+    max-width: var(--layout-width);
+    margin: 0 auto;
+    padding: 100px 24px;
+}
+
+.main__top {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-secondary);
+    margin-bottom: 8px;
+}
+
+.main__h2 {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 120%;
+    color: var(--color-text);
+    margin: 0 0 32px;
+}
+
+.button_posts {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-text);
+    background: none;
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-10);
+    padding: 16px 48px;
+}
+
+.posts__button:hover {
+    background: var(--color-stroke);
+}
+
+.main__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.main__button:hover {
+    background: var(--color-stroke);
 }
