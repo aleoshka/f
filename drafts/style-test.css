@@ -1,3 +1,12 @@
+.wrapper {
+    border: 10px solid #6c28cc;
+    display: flex;
+}
+
+.item {
+    border: 1px solid #6c28cc;
+}
+
 :root {
     --color-primary: #6C38CC;
     --color-primary-hover: #5a2ab3;
@@ -43,11 +52,19 @@ body {
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    gap: 15px;
+    border: 10px solid #6c28cc;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    justify-items: end;
 }
 
-.item_4 {
-    grid-column: auto / -1;
+.item {
+    border: 1px solid #6c28cc;
+    width: 300px;
+}
+
+.item1 {
+    align-items: center;
 }
