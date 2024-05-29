@@ -59,7 +59,8 @@
 
 .courses_wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* это вместо медиа */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 70px;
 }
 
@@ -75,6 +76,11 @@
     .hero_ctr {
         justify-content: center;
     }
+
+    /* minmax даёт возможность избежать медиа */
+    /* .courses_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    } */
 }
 
 @media (max-width: 640px) {
@@ -90,6 +96,10 @@
     .hero {
         padding: 0 24px;
     }
+
+    /* .courses_wrapper {
+        grid-template-columns: 1fr;
+    } */
 }
 
 @media (max-width: 480px) {

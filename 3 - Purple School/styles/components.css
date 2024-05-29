@@ -269,10 +269,9 @@
     border-radius: 0 0 var(--border-10) var(--border-10);
 }
 
-.course-card__cover {
-    height: 177px;
-    background-image: url(../images/cover.png);
-    background-size: contain;
+.course-card__cover img {
+    width: 100%;
+    border-radius: var(--border-10) var(--border-10) 0 0;
 }
 
 .course-card__title {
