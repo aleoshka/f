@@ -52,7 +52,7 @@
     scrollbar-width: none;
 }
 
-/* теперь не нужно, так как работает верхний */
+/* теперь не нужно, так как scrollbar уже поддерживается*/
 .chip_wrapper::-webkit-scrollbar {
     display: none;
 }
@@ -62,6 +62,64 @@
     /* это вместо медиа */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 70px;
+}
+
+.trust-wrapper {
+    display: grid;
+    grid-template-columns: [start] repeat(3, 1fr) [end];
+    gap: 0 75px;
+}
+
+.trust-wrapper__top {
+    grid-column: start / end;
+}
+
+.trust-wrapper__stat {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.trust-wrapper__num {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 120%;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+.trust-wrapper__des {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: var(--color-text);
+}
+
+.trust-wrapper__h3 {
+    grid-column: start / end;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    color: var(--color-text);
+}
+
+.trust-wrapper__rating {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 70px;
+}
+
+.trust-wrapper__rate {
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 120%;
+    color: var(--color-text);
 }
 
 @media (max-width: 1200px) {
@@ -75,6 +133,10 @@
 
     .hero_ctr {
         justify-content: center;
+    }
+
+    .trust-wrapper {
+        grid-template-columns: [start] repeat(2, 1fr) [end];
     }
 
     /* minmax даёт возможность избежать медиа */
@@ -95,6 +157,10 @@
 
     .hero {
         padding: 0 24px;
+    }
+
+    .trust-wrapper {
+        grid-template-columns: [start] 1fr [end];
     }
 
     /* .courses_wrapper {
